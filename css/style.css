@@ -40,12 +40,15 @@ ul, ul {
   margin: 0;
   padding: 0;
 }
+fieldset {
+  padding: 0;
+  border: none;
+}
 .wrapper {
   max-width: 1060px;
   margin: 0 auto;
 }
 .header {
-  background: black;
   position: fixed;
   top: 0;
   left: 0;
@@ -84,4 +87,73 @@ ul, ul {
 }
 .header__link:active {
   opacity: .75;
+}
+.intro {
+  min-height: 100vh;
+  background: url("../img/Hero.jpg") no-repeat top;
+  background-size: cover;
+  padding-top: 263px;
+}
+.intro__title {
+  color: #FFF;
+  font-size: 50px;
+  font-weight: 500;
+  max-width: 619px;
+  margin-bottom: 22px;
+}
+.intro__subtitle {
+  color: #FFFFFF;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  width: 546px;
+  margin-bottom: 59px;
+}
+.search-form__info {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+}
+.search-form__field {
+  background: transparent url("../img/svg/Oval.svg") no-repeat left top;
+  background-size: 20px;
+  border: 0;
+  border-bottom: 2px solid #FFFFFF;
+  margin-right: 60px;
+  width: 297px;
+  height: 40px;
+  padding-left: 43px;
+  padding-bottom: 22px;
+  color: #FFFFFF;
+  font-family: 'Lato', sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+}
+.search-form__field::placeholder {
+  color: #FFFFFF;
+  font-family: 'Lato', sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+}
+.search-form__submit {
+  padding: 15px 39px;
+  text-transform: uppercase;
+  font-size: 24px;
+  color: white;
+  background: #1B7DFF;
+  border: none;
+  font-weight: 500;
+}
+.search-form__submit:hover {
+  background: #0b56b7;
+}
+.search-form__submit:focus {
+  background: #0b56b7;
+}
+.search-form__submit:active {
+  background: #0b56b7;
 }
